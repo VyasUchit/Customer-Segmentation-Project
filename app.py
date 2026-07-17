@@ -33,15 +33,6 @@ if st.sidebar.button("💼 Business_insights"):
 if st.session_state.page == "Home":
     st.title("🎯 AI-Powered Customer Segmentation System")
 
-    # small animation effect
-    with st.spinner("Loading system..."):
-        st.progress(100)
-
-    st.success("System Ready ✅")
-
-    st.divider()
-
-
     st.set_page_config(
         page_title="About Project",
         page_icon="👨‍💻",
