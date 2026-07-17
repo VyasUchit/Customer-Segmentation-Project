@@ -201,7 +201,7 @@ if st.session_state.page == "Dashboard":
 
     st.write("Analyze customer behavior across different customer segments.")
 
-    df = pd.read_csv(r"E:\AI and Data Science\Customer Segmentation using Machine Learning\customer_segmentation.csv")
+    df = pd.read_csv(r"customer_segmentation.csv")
 
 
     col1,col2,col3,col4 = st.columns(4)
