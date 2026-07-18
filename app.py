@@ -393,9 +393,16 @@ if st.session_state.page == "Customer_Segmen":
 
         st.divider()
 
+        st.write("Scaled Input:")
+        st.write(input_scaled)
+
+        cluster = kmeans.predict(input_scaled)[0]
+
+        st.write("Predicted Cluster:", cluster)
+
         st.subheader("📊 Prediction Result")
 
-        if cluster == 0:
+        if cluster == 1:
 
             st.success("🌟 Premium Customer")
 
@@ -420,7 +427,7 @@ if st.session_state.page == "Customer_Segmen":
     ✅ Exclusive Loyalty Rewards
     """)
 
-        elif cluster == 1:
+        elif cluster == 2:
 
             st.warning("🟡 Regular Customer")
 
