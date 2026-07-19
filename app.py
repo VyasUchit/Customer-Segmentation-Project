@@ -83,23 +83,23 @@ if st.session_state.page == "Home":
     st.header("⚙️ Project Workflow")
 
     st.markdown("""
-    1. 📂 Load Customer Dataset
+    1. Load Customer Dataset
 
-    2. 🧹 Data Cleaning & Preprocessing
+    2. Data Cleaning & Preprocessing
 
-    3. 📊 Exploratory Data Analysis (EDA)
+    3. Exploratory Data Analysis (EDA)
 
-    4. ⚖️ Feature Scaling using StandardScaler
+    4. Feature Scaling using StandardScaler
 
-    5. 🤖 Train K-Means Clustering Model
+    5. Train K-Means Clustering Model
 
-    6. 💾 Save Model & Scaler
+    6. Save Model & Scaler
 
-    7. 🎯 Predict Customer Segment
+    7. Predict Customer Segment
 
-    8. 📈 Generate Business Insights
+    8. Generate Business Insights
 
-    9. 🌐 Deploy Interactive Streamlit Application
+    9. Deploy Interactive Streamlit Application
     """)
 
     st.divider()
@@ -110,29 +110,29 @@ if st.session_state.page == "Home":
 
     with col1:
         st.success("""
-    🐍 Python
+    Python
 
-    📊 Pandas
+    Pandas
 
-    📋 NumPy
+    NumPy
     """)
 
     with col2:
         st.success("""
-    📈 Matplotlib
+    Matplotlib
 
-    📉 Seaborn
+    Seaborn
 
-    🤖 Scikit-learn
+    Scikit-learn
     """)
 
     with col3:
         st.success("""
-    🌐 Streamlit
+    Streamlit
 
-    💾 Joblib
+    Joblib
 
-    📑 Jupyter Notebook
+    Jupyter Notebook
     """)
 
     st.divider()
@@ -317,28 +317,28 @@ if st.session_state.page == "Customer_Segmen":
     with col1:
 
         income = st.number_input(
-            "💰 Income",
+            "Income",
             min_value=0.0,
             value=50000.0,
             help="Enter the customer's annual income."
         )
 
         recency = st.number_input(
-            "🕒 Recency",
+            "Recency",
             min_value=0,
             value=30,
             help="Number of days since the customer's last purchase. Lower values indicate a more recent purchase."
         )
 
         beverage = st.number_input(
-            "🥤 Beverage Spending",
+            "Beverage Spending",
             min_value=0.0,
             value=100.0,
             help="Total amount spent on beverages."
         )
 
         food = st.number_input(
-            "🍽️ Food Spending",
+            "Food Spending",
             min_value=0.0,
             value=100.0,
             help="Total amount spent on food products."
@@ -347,28 +347,28 @@ if st.session_state.page == "Customer_Segmen":
     with col2:
 
         fresh = st.number_input(
-            "🥗 Fresh Products Spending",
+            "Fresh Products Spending",
             min_value=0.0,
             value=50.0,
             help="Total amount spent on fresh products."
         )
 
         snacks = st.number_input(
-            "🍪 Snacks & Sweets Spending",
+            "Snacks & Sweets Spending",
             min_value=0.0,
             value=30.0,
             help="Total amount spent on snacks and sweet products."
         )
 
         online = st.number_input(
-            "💻 Online Purchases",
+            "Online Purchases",
             min_value=0,
             value=5,
             help="Number of purchases made through the online store."
         )
 
         store = st.number_input(
-            "🏪 In-Store Purchases",
+            "In-Store Purchases",
             min_value=0,
             value=5,
             help="Number of purchases made from physical retail stores."
@@ -492,11 +492,11 @@ if st.session_state.page == "Business_insights":
 
         st.subheader("📌 Characteristics")
         st.markdown("""
-    - 💰 High Income
-    - 🛒 High Spending
-    - 🔄 Frequent Purchases
-    - ❤️ Loyal Customers
-    - 📈 High Customer Engagement
+    - High Income
+    - High Spending
+    - Frequent Purchases
+    - Loyal Customers
+    - High Customer Engagement
     """)
 
         st.subheader("📈 Business Insights")
